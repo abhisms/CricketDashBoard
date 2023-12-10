@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cricket Scoreboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!--
+             <div class="column undo-container" style="padding-right: 100px;">
+                <button onclick="undo()">Undo</button>
+            </div> -->
+            <div class="column heading" style="text-align: right; padding-left: 250px;">
+                <h2>CRICKET SCORE</h2>
+            </div>
+            <div class="column logo">
+                <img src="i1.png" alt="India Logo" width="60" height="60">
+            </div>
+        </div>
+        <div class="row headings">
+            <div class="column">Player Name</div>
+            <div class="column">Score</div>
+            <div class="column">Add Run</div>
+        </div>
+        <div id="scoreboard">
+            <!-- Player details and scores will be dynamically added here -->
+        </div>
+        <div class="row total">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column" id="total-score"></div>
+        </div>
+        <!-- <div class="row">
+ <button onclick="addBall()">Add Ball</button> 
+            <div class="column" id="total-overs">Total Overs: 0</div>
+        </div>    ellinda start -->
+
+             <div class="row buttons-row" style="padding-right: 100px; padding-left: 100px;">
+            <button onclick="undo()">Undo</button>
+            <button onclick="addWide()">Add Wide</button>
+            <button onclick="addNoBall()">Add No Ball</button>
+            <!-- Inside the <div class="row buttons-row"> -->
+<select id="leg-bye-select">
+    <option>Select Leg Bye</option>
+    <option value="1">Add Leg Bye 1</option>
+    <option value="2">Add Leg Bye 2</option>
+    <option value="3">Add Leg Bye 3</option>
+    <option value="4">Add Leg Bye 4</option>
+</select>
+<button style="width:110px" onclick="addLegBye()">Add Leg Bye</button>
+
+        </div>
+        <div class="row extras" >
+            <div class="column" style= "padding-right:0px; color: yellow;">Extras</div>
+            <div class="column" id="extras-total" style="padding-left:0px">0</div>
+        </div>
+        <div class="row total-overs">
+            <div class="column" style="color: yellow;">Total Overs</div>
+            <div class="column" id="total-overs">0</div>
+        </div>
+        <div class="row run-rate">
+            <div class="column" style="color:yellow;">Run Rate</div>
+            <div class="column" id="run-rate">0.00</div>
+        </div>
+
+<!-- 
+    <div class="row">
+    <button onclick="addBall()">Add Ball</button>
+    </div>
+-->
+    </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

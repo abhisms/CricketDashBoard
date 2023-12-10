@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url(b2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+
+    background-image: url('#');
+    background-size: cover; /* Corrected property name */
+    background-repeat: no-repeat; 
+    border-radius: 5px;
+
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+    flex: 1;
+}
+
+.logo {
+    text-align: right;
+     margin-left: 1px;
+}
+
+.logo img {
+    margin-top: 14px;
+    margin-left: 450px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+}
+
+.headings {
+    font-weight: bold;
+}
+/*
+.total {
+    background-color: #f5f5f5;
+} */
+
+/* Add this to your styles.css file 
+.row.total {
+    background-color: rgba(245, 245, 245, 0.7); /* Adjust the alpha channel (0.7) for transparency 
+}
+    */
+
+/* Add this to your styles.css file */
+.row .column {
+    color: white; /* Set the text color to red or any other color you prefer */
+}
+
+
+.heading h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.row.headings .column {
+    font-size: 18px;
+    color: yellow;
+}
+
+/*   No need ...Add these styles to your existing styles.css file */
+.buttons-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.row.extras,
+.row.total-overs,
+.row.run-rate {
+    border-top: 1px solid #ddd;
+}
+
+.row.extras,
+.row.total-overs,
+.row.run-rate,
+.row.buttons-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* Add this to your styles.css file */
+.row.total .column:last-child {
+    color: yellow; /* Set the text color for "Team Total:" */
+}
+
+.row.extras .column,
+.row.total-overs .column,
+.row.run-rate .column {
+    font-weight: bold;
+    margin-right: 300px;
+}
+
+.row.extras .column {
+    flex: 1;
+}
+
+.row.total-overs .column,
+.row.run-rate .column {
+    flex: 1;
+    text-align: center;
+}
+
+/* Add these styles to your existing styles.css file */
+.row.buttons-row button,
+.row.buttons-row select {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.row.buttons-row button:hover,
+.row.buttons-row select:hover {
+    background-color: #45a049;
+}
+
